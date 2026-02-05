@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="public/logo.png" alt="BrewJá Logo" width="120" height="120">
-  <h1>BrewJá</h1>
+  <img src="public/logo.png" alt="BrewJá Logo" width="800" height="800">
+
   <p><b>O Sistema Inteligente de Gestão para Cervejarias Artesanais</b></p>
   
   <p>
