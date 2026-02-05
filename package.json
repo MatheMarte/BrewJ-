@@ -1,0 +1,52 @@
+{
+  "name": "brewflow-app",
+  "productName": "BrewJá",
+  "description": "Sistema de Gestão para Cervejarias Artesanais",
+  "author": "Matheus",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron:build": "vite build && electron-builder",
+    "package": "vite build && electron-packager . --platform=win32 --arch=x64 --out=release-build --icon=public/logo.png --overwrite --ignore=\"^(build-final|dist-build|release-build|.git|.vscode)\""
+  },
+  "build": {
+    "appId": "com.brewflow.app",
+    "productName": "BrewJá",
+    "directories": {
+      "output": "dist-build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron.js",
+      "package.json"
+    ],
+    "win": {
+      "target": "dir",
+      "icon": "public/logo.png"
+    }
+  },
+  "dependencies": {
+    "@google/genai": "*",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-grid-layout": "^2.2.2",
+    "recharts": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
+  }
+}

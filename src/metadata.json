@@ -1,0 +1,7 @@
+{
+  "name": "BrewFlow: Precision Brewery Management",
+  "description": "A comprehensive SaaS architecture for brewery operations, featuring real-time fermentation monitoring, keg-level traceability, and AI-driven chemical engineering insights.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
